@@ -1,0 +1,7 @@
+FROM python:3.10
+
+COPY etl .
+
+RUN pip install -r requirements.txt
+
+ENTRYPOINT ["python", "app.py"]
